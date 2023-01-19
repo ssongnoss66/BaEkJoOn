@@ -1,14 +1,11 @@
-n = int(input())
-commuteDict = {}
+commuteSet = set()
 
-for i in range(n):
-    k, v = map(str, input().split())
-    commuteDict[k] = v
-
-printLi = []
-for k, v in commuteDict.items():
+for i in range(int(input())):
+    k, v = input().split()
     if v == "enter":
-        printLi.append(k)
+        commuteSet.add(k)
+    else:
+        commuteSet.remove(k)
 
-for j in sorted(printLi, reverse=True):
+for j in sorted(commuteSet)[::-1]:
     print(j)
