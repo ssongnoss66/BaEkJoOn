@@ -1,10 +1,7 @@
-commuteSet = set()
-
-for i in range(int(input())):
-    k, v = input().split()
-    if v == "enter":
-        commuteSet.add(k)
-    else:
-        commuteSet.remove(k)
-
-print("\n".join(sorted(commuteSet)[::-1]))
+s=set()
+_,*l=open(0)
+for c in l:
+    n,a=c.split()
+    if a[0]=='e':s.add(n)
+    else:s.remove(n)
+print(*sorted(s)[::-1],sep='\n')
