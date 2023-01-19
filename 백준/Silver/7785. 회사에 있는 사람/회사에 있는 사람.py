@@ -7,5 +7,4 @@ for i in range(int(input())):
     else:
         commuteSet.remove(k)
 
-for j in sorted(commuteSet)[::-1]:
-    print(j)
+print("\n".join(sorted(commuteSet)[::-1]))
