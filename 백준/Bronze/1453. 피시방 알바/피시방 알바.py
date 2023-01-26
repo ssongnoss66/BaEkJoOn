@@ -1,7 +1,5 @@
-from collections import deque
-
 guestN = int(input())
-seatNum = deque(map(int, input().split()))
+seatNum = list(map(int, input().split()))
 seatStack = []
 rfs = 0
 
