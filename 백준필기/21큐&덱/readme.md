@@ -1,0 +1,1 @@
+범위에 해당하는 리스트 만들기 numLi = list(range(1, int(input())+1))
